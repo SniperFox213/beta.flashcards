@@ -8,14 +8,14 @@
   <section style="background-image: linear-gradient(to top right, #a18cd1 0%, #fbc2eb 100%);" class="w-full h-screen relative flex justify-center items-center">
 
     <!-- Cards -->
-    <div class="w-full md:w-2/3 h-4/5 relative">
+    <div class="w-full md:w-2/3 h-4/5 md:h-2/3 relative">
       <!-- Title -->
       <div class="text-center hidden md:block">
         <h2 class="text-3xl text-white">Завдання на сьогодні</h2>
         <p class="text-sm text-white">Виконуйте ці завдання кожен день та покращуйте свої знання з різних шкільних предметів!</p>
       </div>
 
-      <div style="overflow: hidden; overflow-x: auto;" class="mt-4 px-10 h-full flex relative">
+      <div style="overflow: hidden; overflow-x: auto;" class="mt-4 md:mt-0 px-10 h-full flex relative">
         <div class="absolute md:relative w-full h-full flex justify-start items-center">
           <!-- Card #1 -->
           <div class="pr-75% md:pr-30% h-4/5 mx-4 relative">
@@ -34,7 +34,7 @@
               </div>
 
               <!-- Content -->
-              <div style="overflow: hidden; overflow-y: auto;" class="p-4">
+              <div style="overflow: hidden; overflow-y: auto;" class="p-4 pb-24 md:pb-0">
                 <!-- Math Icon -->
                 <div class="w-full flex justify-center">
                   <img class="h-32 md:h-24" src="./3D/Empty-BOX.png" alt="Empty Box">
@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- Texts -->
-                <div class="mt-4 text-center">
+                <div class="mt-6 md:mt-4 text-center">
                   <p class="text-sm text-gray-800 opacity-70">Вивчайте нові формули по математиці та приходьте повторювати їх завтра!</p>
                 </div>
               </div>
@@ -115,7 +115,7 @@
                 </div>
 
                 <!-- Texts -->
-                <div class="mt-4 text-center">
+                <div class="mt-6 md:mt-4 text-center">
                   <p class="text-sm text-gray-800 opacity-70">Повторення - це найголовніше при вивченні та запам'ятовуванні нового матеріалу.</p>
                 </div>
               </div>
@@ -169,7 +169,7 @@
                 </div>
 
                 <!-- Texts -->
-                <div class="mt-2 text-center">
+                <div class="mt-6 md:mt-4 text-center">
                   <p class="text-sm text-gray-800 opacity-70">Налаштуйте свій аккаунт для того, щоб ми змогли допомогти вам вивчати матеріал саме так, як вам приємно!</p>
                 </div>
               </div>
