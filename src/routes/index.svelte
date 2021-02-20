@@ -8,27 +8,17 @@
   <section style="background-image: linear-gradient(to top right, #a18cd1 0%, #fbc2eb 100%);" class="w-full h-screen relative flex justify-center items-center">
 
     <!-- Cards -->
-    <div class="w-2/3">
+    <div class="w-full md:w-2/3 h-2/3 relative">
       <!-- Title -->
       <div class="text-center">
         <h2 class="text-3xl text-white">Завдання на сьогодні</h2>
         <p class="text-sm text-white">Виконуйте ці завдання кожен день та покращуйте свої знання з різних шкільних предметів!</p>
       </div>
 
-      <div class="mt-4 px-10 w-full flex relative">
-        <!-- Arrow left -->
-        <div class="absolute inset-y-0 h-full flex items-center left-0">
-          <Icon name="chevron-left" attrs={{ class: "w-7 h-7 text-white" }} />
-        </div>
-
-        <!-- Arrow right -->
-        <div class="absolute inset-y-0 h-full flex items-center right-0">
-          <Icon name="chevron-right" attrs={{ class: "w-7 h-7 text-white" }} />
-        </div>
-        
-        <!-- Card #1 -->
-        <div class="w-1/3 px-4 relative">
-          <div style="padding-top: 150%;" class="w-full relative">
+      <div style="overflow: hidden; overflow-x: auto;" class="mt-4 px-10 h-full flex relative">
+        <div class="absolute md:relative w-full h-full flex justify-start items-center">
+          <!-- Card #1 -->
+          <div class="pr-75% md:pr-30% h-4/5 mx-4 relative">
             <div class="absolute inset-0 w-full h-full rounded-md bg-white flex flex-col">
             
               <!-- Mini-Header -->
@@ -69,7 +59,7 @@
 
                 <!-- Texts -->
                 <div class="mt-4 text-center">
-                  <p class="text-sm text-gray-800 opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maxime eligendi debitis beatae sit facere?</p>
+                  <p class="text-sm text-gray-800 opacity-70">Вивчайте нові формули по математиці та приходьте повторювати їх завтра!</p>
                 </div>
               </div>
               
@@ -83,11 +73,9 @@
 
             </div>
           </div>
-        </div>
 
-        <!-- Card #2 -->
-        <div class="w-1/3 px-4 relative">
-          <div style="padding-top: 150%;" class="w-full relative">
+          <!-- Card #2 -->
+          <div class="pr-75% md:pr-30% h-4/5 mx-4 relative">
             <div class="absolute inset-0 w-full h-full rounded-md bg-white">
 
               <!-- Mini-Header -->
@@ -128,7 +116,7 @@
 
                 <!-- Texts -->
                 <div class="mt-4 text-center">
-                  <p class="text-sm text-gray-800 opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maxime eligendi debitis beatae sit facere?</p>
+                  <p class="text-sm text-gray-800 opacity-70">Повторення - це найголовніше при вивченні та запам'ятовуванні нового матеріалу.</p>
                 </div>
               </div>
               
@@ -150,11 +138,9 @@
 
             </div>
           </div>
-        </div>
 
-        <!-- Card #3 -->
-        <div class="w-1/3 px-4 relative">
-          <div style="padding-top: 150%;" class="w-full relative">
+          <!-- Card #3 -->
+          <div class="pr-75% md:pr-30% h-4/5 mx-4 relative">
             <div class="absolute inset-0 w-full h-full rounded-md bg-white">
 
               <!-- Mini-Header -->
@@ -183,8 +169,8 @@
                 </div>
 
                 <!-- Texts -->
-                <div class="mt-4 text-center">
-                  <p class="text-sm text-gray-800 opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maxime eligendi debitis beatae sit facere?</p>
+                <div class="mt-2 text-center">
+                  <p class="text-sm text-gray-800 opacity-70">Налаштуйте свій аккаунт для того, щоб ми змогли допомогти вам вивчати матеріал саме так, як вам приємно!</p>
                 </div>
               </div>
               
@@ -200,7 +186,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
     </div>
@@ -208,8 +193,18 @@
     <!-- Dots -->
     <div class="opacity-70 absolute inset-x-0 bottom-0 w-full flex flex-col justify-center items-center py-6">
       <!-- Dots themselves -->
-      <div class="flex mt-2 justify-center items-center">
-        
+      <div class="flex mt-2 justify-center items-center relative px-16">        
+        <!-- Arrow left -->
+        <div class="absolute inset-y-0 h-full hidden md:flex items-center left-0">
+          <Icon name="chevron-left" attrs={{ class: "w-7 h-7 text-white" }} />
+        </div>
+
+        <!-- Arrow right -->
+        <div class="absolute inset-y-0 h-full hidden md:flex items-center right-0">
+          <Icon name="chevron-right" attrs={{ class: "w-7 h-7 text-white" }} />
+        </div>
+
+
         <div class="w-4 h-4 bg-white rounded-full mx-4"></div>
         <div class="w-3 h-3 border-2 border-white rounded-full mx-4"></div>
         <div class="w-3 h-3 border-2 border-white rounded-full mx-4"></div>
