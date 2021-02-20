@@ -8,9 +8,9 @@
   <section style="background-image: linear-gradient(to top right, #a18cd1 0%, #fbc2eb 100%);" class="w-full h-screen relative flex justify-center items-center">
 
     <!-- Cards -->
-    <div class="w-full md:w-2/3 h-2/3 relative">
+    <div class="w-full md:w-2/3 h-4/5 relative">
       <!-- Title -->
-      <div class="text-center">
+      <div class="text-center hidden md:block">
         <h2 class="text-3xl text-white">Завдання на сьогодні</h2>
         <p class="text-sm text-white">Виконуйте ці завдання кожен день та покращуйте свої знання з різних шкільних предметів!</p>
       </div>
@@ -37,7 +37,7 @@
               <div style="overflow: hidden; overflow-y: auto;" class="p-4">
                 <!-- Math Icon -->
                 <div class="w-full flex justify-center">
-                  <img class="h-24" src="./3D/Empty-BOX.png" alt="Empty Box">
+                  <img class="h-32 md:h-24" src="./3D/Empty-BOX.png" alt="Empty Box">
                 </div>
 
                 <!-- Title -->
@@ -94,7 +94,7 @@
               <div style="overflow: hidden; overflow-y: auto;" class="p-4 flex-grow">
                 <!-- Math Icon -->
                 <div class="w-full flex justify-center relative">
-                  <img class="h-24" src="./3D/Light.png" alt="Empty Box">
+                  <img class="h-32 md:h-24" src="./3D/Light.png" alt="Empty Box">
                 </div>
 
                 <!-- Title -->
@@ -159,7 +159,7 @@
               <div style="overflow: hidden; overflow-y: auto;" class="p-4 flex-grow">
                 <!-- Math Icon -->
                 <div class="w-full flex justify-center relative">
-                  <img class="h-24" src="./3D/Gear.png" alt="Gear">
+                  <img class="h-32 md:h-24" src="./3D/Gear.png" alt="Gear">
                 </div>
 
                 <!-- Title -->
