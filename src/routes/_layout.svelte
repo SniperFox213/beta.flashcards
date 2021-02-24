@@ -2,6 +2,8 @@
 	// Importing components
 	import { Icon } from "../components";
 
+	let menuOpened = true;
+
 	// Services list
 	let services = [
 		{
@@ -28,6 +30,169 @@
 
 	let current = "02";
 </script>
+
+{ #if menuOpened }
+	<div style="z-index: 999; overflow-y: auto;" class="fixed inset-0 w-full h-full bg-white p-4">
+		<!-- Mini-header -->
+		<div on:click={(e) => {
+			menuOpened = false;
+		}} class="w-full flex items-center opacity-80">
+			<Icon name="chevron-left" attrs={{ class: "w-6 h-6 text-black" }} />
+	
+			<p class="text-black text-base ml-1">Назад</p>
+		</div>
+
+		<!-- User Account + His current level -->
+		<div class="mt-10 flex flex-col items-center justify-center">
+			<div class="w-2/3 flex items-center relative">
+				<!-- Avatar -->
+				<div style="background-image: url('./icons/when_rejected.png'); background-size: cover; background-position: center;" class="w-24 h-24 relative rounded-full border-2 border-gray-200">
+					<div class="absolute top-0 right-0">
+
+					</div>
+				</div>
+
+				<!-- Texts -->
+				<div class="ml-4 text-left">
+					<h1 class="text-xl text-black font-medium">жулипуп</h1>
+
+					<!-- Badges -->
+					<div class="flex items-center">
+						<div class="mt-0.5 w-min h-6 mr-2 rounded-full bg-gray-200 px-4 flex items-center justify-center">
+							<p class="text-sm text-black opacity-80">Путин</p>
+						</div>
+
+						<div class="mt-0.5 w-min h-6 mr-2 rounded-full bg-gray-200 px-4 flex items-center justify-center">
+							<Icon name="more-horizontal" attrs={{ class: "w-4 h-4 text-black opacity-80" }}/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Level -->
+			<!-- Title -->
+			<!-- <p class="mt-8 text-left w-full text-sm text-black opacity-60 px-1 uppercase">Рівень</p> -->
+			<div class="w-full mt-6 flex items-center">
+
+				<!-- Information -->
+				<!-- <div class="w-1/3 px-1">
+					<p class="text-xs text-gray-800 opacity-80">Покращуйте свій рівень виконуючі різні завдання та вивчаючи новий матеріал!</p>
+				</div> -->
+
+				<div class="w-full">
+					<!-- Progress bar -->
+					<div class="w-full rounded-full h-6 bg-gray-200">
+						<div class="w-1/3 rounded-full h-6 bg-indigo-400"></div>
+					</div>
+
+					<div class="w-full py-2 flex justify-between items-center">
+						<p class="text-xs text-gray-800 opacity-80">1200 очков</p>
+
+						<p class="text-xs text-gray-800 opacity-80">4 уровень <span class="border-b border-dotted border-gray-800">(2000 очков)</span></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Settings List -->
+		<div class="mt-16">
+			<!-- Title -->
+			<p class="text-sm text-black opacity-60 px-1 uppercase">Налаштування</p>
+
+			<div class="w-full my-4 h-32 rounded-md bg-indigo-400 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4">
+					<img class="w-2/3" src="./icons/old_shrugging_guy.png" alt="">
+				</div>
+
+				<!-- Text -->
+				<div class="ml-4 w-3/4">
+					<h1 class="text-xl text-white font-medium">Lorem ipsum dolor sit.</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+			<div class="w-full my-4 h-32 rounded-md bg-pink-400 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4">
+					<img class="w-2/3" src="./icons/old_shrugging_guy.png" alt="">
+				</div>
+
+				<!-- Text -->
+				<div class="ml-2 w-3/4">
+					<h1 class="text-xl text-white font-medium">Lorem ipsum dolor sit.</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Services List -->
+		<div class="mt-10">
+			<!-- Title -->
+			<p class="text-sm text-black opacity-60 px-1 uppercase">Інші сервіси</p>
+
+			<div class="w-full my-4 h-32 rounded-md bg-purple-400 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4">
+					<img class="w-2/3" src="./icons/old_shrugging_guy.png" alt="">
+				</div>
+
+				<!-- Text -->
+				<div class="ml-4 w-3/4">
+					<h1 class="text-xl text-white font-medium">Lorem ipsum dolor sit.</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+			<div class="w-full my-4 h-32 rounded-md bg-yellow-500 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4">
+					<img class="w-2/3" src="./icons/old_shrugging_guy.png" alt="">
+				</div>
+
+				<!-- Text -->
+				<div class="ml-2 w-3/4">
+					<h1 class="text-xl text-white font-medium">Lorem ipsum dolor sit.</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logout/Change account -->
+		<div class="mt-10 mb-8">
+			<!-- Title -->
+			<p class="text-sm text-black opacity-60 px-1 uppercase">Аккаунт</p>
+
+			<div class="w-full my-4 h-32 rounded-md bg-purple-400 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4 flex justify-center">
+					<Icon name="refresh-cw" attrs={{ class: "w-8 h-8 text-white" }} />
+				</div>
+
+				<!-- Text -->
+				<div class="ml-4 w-3/4">
+					<h1 class="text-xl text-white font-medium">Змінити аккаунт</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+			<div class="w-full my-4 h-32 rounded-md bg-red-400 flex items-center px-4">
+				<!-- Image -->
+				<div class="w-1/4 flex justify-center">
+					<Icon name="log-out" attrs={{ class: "w-8 h-8 text-white" }} />
+				</div>
+
+				<!-- Text -->
+				<div class="ml-4 w-3/4">
+					<h1 class="text-xl text-white font-medium">Вийти</h1>
+					<p class="text-base text-gray-100 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+{ /if }
 
 <!-- Header -->
 <header style="z-index: 2;" class="fixed top-0 w-full md:bg-white">
@@ -68,7 +233,9 @@
 		</div>
 
 		<!-- Grid -->
-		<button class="h-12 w-12 bg-gray-100 rounded-md flex justify-center items-center md:mx-3">
+		<button on:click={(e) => {
+			menuOpened = true;
+		}} class="h-12 w-12 bg-gray-100 rounded-md flex justify-center items-center md:mx-3">
 			<Icon name="grid" attrs={{ class: "w-6 h-6 text-gray-800" }} />
 		</button>
 
