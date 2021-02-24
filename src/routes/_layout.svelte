@@ -30,11 +30,16 @@
 </script>
 
 <!-- Header -->
-<header style="z-index: 2;" class="fixed top-0 w-full bg-white">
+<header style="z-index: 2;" class="fixed top-0 w-full md:bg-white">
 	<!-- Services -->
-	<div class="w-full flex justify-between items-center px-4 py-2">
+	<div class="w-full flex justify-between items-center p-2 md:px-4">
+		<!-- Bёta logotype -->
+		<div class="bg-indigo-400 text-white font-bold w-12 h-12 rounded-md shadow-md flex md:hidden items-center justify-center text-md">
+			Bё
+		</div>
+		
 		<!-- Current Service -->
-		<div class="flex items-center px-4 py-2 relative">
+		<div class="hidden md:flex items-center px-4 py-2 relative">
 			<div class="w-12 h-12 md:w-8 md:h-8 rounded-md flex justify-center items-center opacity-70" style="{ services.find((x) => x.id == current).icon.background }">
 				<img class="w-2/3" src="./icons/{ services.find((x) => x.id == current).icon.image }" alt="" />
 			</div>
@@ -63,7 +68,7 @@
 		</div>
 
 		<!-- Grid -->
-		<button class="h-12 w-12 bg-gray-100 rounded-md flex justify-center items-center mx-3">
+		<button class="h-12 w-12 bg-gray-100 rounded-md flex justify-center items-center md:mx-3">
 			<Icon name="grid" attrs={{ class: "w-6 h-6 text-gray-800" }} />
 		</button>
 
