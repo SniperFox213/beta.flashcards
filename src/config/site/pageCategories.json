@@ -1,0 +1,95 @@
+[
+  {
+    "id": 0,
+    "title": "Налаштування",
+
+    "pages": [
+      {
+        "id": 0,
+        "href": "https://atbeta.ml/account",
+
+        "icon": "./icons/man-in-tuxedo.png",
+        "background": "indigo-400",
+
+        "title": "Аккаунт",
+        "subtitle": "Налаштування вашого особистого аккаунту"
+      },
+      {
+        "id": 0,
+        "href": "/settings",
+
+        "icon": "./icons/desktop-computer.png",
+        "background": "pink-400",
+
+        "title": "Сайт",
+        "subtitle": "Налаштування всього сайту. Змінюйте тему, мову и так подібне"
+      }
+    ]
+  },
+  
+  {
+    "id": 1,
+    "title": "Сторінки",
+
+    "pages": [
+      {
+        "id": 0,
+        "href": "/",
+
+        "icon": "",
+        "background": "indigo-400",
+
+        "title": "Головна",
+        "subtitle": "Головна сторінка з всіма завданнями на сьогодні"
+      },
+      {
+        "id": 1,
+        "href": "https://atbeta.ml/library?from=flashcards",
+
+        "icon": "",
+        "background": "indigo-400",
+
+        "title": "Бібліотека",
+        "subtitle": "Бібліотека з всіма формулами та збірниками"
+      },
+      {
+        "id": 2,
+        "href": "https://atbeta.ml/library?from=flashcards",
+
+        "icon": "",
+        "background": "indigo-400",
+
+        "title": "Бібліотека",
+        "subtitle": "Бібліотека з всіма формулами та збірниками"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Аккаунт",
+
+    "pages": [
+      {
+        "id": 0,
+        "href": "/account/change",
+
+        "icon": "$refresh-cw",
+        "background": "purple-400",
+
+        "title": "Змінити аккаунт",
+        "subtitle": "Зайшли не в той аккаунт? Тоді виберіть інший!"
+      },
+      {
+        "id": 1,
+        "href": "/account/logout",
+
+        "icon": "$log-out",
+        "background": "red-400",
+
+        "title": "Вийти",
+        "subtitle": "Потрібна конспірація? Ну тоді виходьте з аккаунту."
+      }
+    ]
+  }
+]
