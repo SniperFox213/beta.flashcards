@@ -22,9 +22,9 @@
       </div>
 
       <!-- Content -->
-      <div class="flex-grow px-4 w-full relative">
+      <div class="flex-grow overflow-hidden overflow-y-auto px-4 w-full relative">
         <div class="w-full flex justify-center">
-          <img class="w-1/3" src="./3D/Empty-BOX.png" alt="Empty Box">
+          <img class="w-2/3" src="./3D/Empty-BOX.png" alt="Empty Box">
         </div>
 
         <!-- Title -->
