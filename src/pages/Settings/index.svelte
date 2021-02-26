@@ -6,7 +6,7 @@
   import { Icon } from "../../components";
   import Button from "./components/WideButton.svelte";
 
-  let opened = false;
+  export let opened = false;
 </script>
 
 <svelte:window on:mousemove={(e) => {
@@ -17,23 +17,19 @@
 }} />
 
 { #if opened }
-  <div style="z-index: 999;" class="fixed overflow-y-auto inset-0 w-full h-full bg-white p-4">
+  <div style="z-index: 1000;" class="fixed inset-0 w-full h-full">
     <!-- Background -->
-    <div id="background" style="background-image: url('./background/1.svg'); z-index: -1;" class="absolute inset-0 w-full h-full"></div>
+    <div id="background" style="background-image: url('./background/1.svg'); z-index: -1;" class="mt-16 md:mt-20 bg-white absolute inset-0 w-full h-full"></div>
 
     <!-- Mini-header -->
-    <div on:click={(e) => {
-      opened = false;
-    }} style="z-index: 2;" class="fixed top-0 w-full opacity-80 py-4 md:px-6 bg-white">
+    <div on:click={() => opened = false} style="z-index: 1000;" class="fixed top-0 flex items-center h-16 md:h-20 pl-10 md:pl-12">
       <!-- (mobile view) -->
-      <div class="flex md:hidden">
-        <Icon name="chevron-left" attrs={{ class: "w-6 h-6 text-black" }} />
-
-        <p class="text-black text-base ml-1">Назад</p>
-      </div>
+      <button on:click={() => opened = false} class="ml-6">
+        <p class="text-white text-base">На головну</p>
+      </button>
     </div>
 
-    <div class="md:flex md:items-center md:justify-center h-full relative md:px-6">
+    <div class="overflow-hidden overflow-y-auto mt-16 md:flex md:items-center md:justify-center w-full h-full relative px-4 md:px-6 pb-16">
       <!-- User Account + His current level -->
       <div class="w-full mt-16 md:mt-0 md:w-1/4 md:h-full md:py-24 flex justify-center">
 

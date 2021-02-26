@@ -1,5 +1,9 @@
 <script>
   // Importing components
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
+  // Importing components
   import { Icon } from "../../components";
 </script>
 
@@ -53,7 +57,7 @@
     </div>
 
     <!-- Menu button -->
-    <div class="bg-white rounded-md w-10 md:w-12 h-10 md:h-12 flex justify-center items-center">
+    <div on:click={() => dispatch("openMenu")} class="bg-white rounded-md w-10 md:w-12 h-10 md:h-12 flex justify-center items-center">
       <Icon name="grid" attrs={{ class: "w-5 h-5 text-black" }} />
     </div>
   </div>
