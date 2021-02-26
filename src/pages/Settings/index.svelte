@@ -34,15 +34,13 @@
       <div class="w-full mt-16 md:mt-0 md:w-1/4 md:h-full md:py-24 flex justify-center">
 
         <div class="w-full md:h-full flex flex-col items-center justify-center md:rounded-md md:bg-gray-100 md:p-6">
-          <div class="w-2/3 flex md:flex-col items-center relative">
+          <div class="w-2/3 flex flex-col items-center relative">
             <!-- Avatar -->
             <div style="background-image: url('./icons/when_rejected.png'); background-size: cover; background-position: center;" class="w-24 h-24 relative rounded-full border-2 border-gray-200">
-              <!-- <div class="absolute top-0 right-0">
-              </div> -->
             </div>
 
             <!-- Texts -->
-            <div class="ml-4 md:mt-4 md:ml-0 text-left md:text-center">
+            <div class="mt-4 text-center">
               <h1 class="text-xl text-black font-medium">жулипуп</h1>
 
               <!-- Badges -->
@@ -51,7 +49,7 @@
                   <p class="text-sm text-black opacity-80">Путин</p>
                 </div>
 
-                <div class="mt-0.5 w-min h-6 mr-2 rounded-full bg-gray-200 px-4 flex items-center justify-center">
+                <div class="mt-0.5 w-min h-6 rounded-full bg-gray-200 px-4 flex items-center justify-center">
                   <Icon name="more-horizontal" attrs={{ class: "w-4 h-4 text-black opacity-80" }}/>
                 </div>
               </div>
