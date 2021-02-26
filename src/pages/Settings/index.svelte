@@ -6,22 +6,25 @@
   import { Icon } from "../../components";
   import Button from "./components/WideButton.svelte";
 
-  let opened = true;
+  let opened = false;
 </script>
+
+<svelte:window on:mousemove={(e) => {
+  let el = document.getElementById("background");
+
+  el.style.backgroundPositionX = -Math.round(e.pageX/20) + "px";
+  el.style.backgroundPositionY = -Math.round(e.pageY/20) + "px";
+}} />
 
 { #if opened }
   <div style="z-index: 999;" class="fixed overflow-y-auto inset-0 w-full h-full bg-white p-4">
+    <!-- Background -->
+    <div id="background" style="background-image: url('./background/1.svg'); z-index: -1;" class="absolute inset-0 w-full h-full"></div>
+
     <!-- Mini-header -->
     <div on:click={(e) => {
       opened = false;
     }} style="z-index: 2;" class="fixed top-0 w-full opacity-80 py-4 md:px-6 bg-white">
-      <!-- (desktop-view) -->
-      <div class="hidden md:flex">
-        <div class="bg-indigo-400 text-white font-bold w-9 h-9 rounded-md shadow-md flex items-center justify-center text-md">
-          Bё
-        </div>
-      </div>
-
       <!-- (mobile view) -->
       <div class="flex md:hidden">
         <Icon name="chevron-left" attrs={{ class: "w-6 h-6 text-black" }} />
