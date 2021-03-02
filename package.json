@@ -13,6 +13,7 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
+    "@atbeta/components": "^1.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "apicache": "^1.5.3",
     "axios": "^0.21.1",

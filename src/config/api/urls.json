@@ -1,0 +1,4 @@
+{
+  "internal": "https://api.atbeta.ml/v1",
+  "authUrl": "https://atbeta.ml/authorize?uri=https://flashcards.atbeta.ml/authorize"
+}
